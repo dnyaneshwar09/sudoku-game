@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🎉 Sudoku — Fun Brain Puzzle 🎉</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+  <header>
+    <h1>🎉 Sudoku — Brain Puzzle 🎉</h1>
+    <p class="subtitle">Fill every row, column, and 3×3 box with numbers 1–9</p>
+  </header>
+
+  <section class="controls">
+    <label class="select">
+      Difficulty
+      <select id="difficulty">
+        <option value="35">Easy</option>
+        <option value="45" selected>Medium</option>
+        <option value="55">Hard</option>
+      </select>
+    </label>
+
+    <div class="btns">
+      <button id="newBtn" class="btn">New Game</button>
+      <button id="hintBtn" class="btn">Hint</button>
+      <button id="checkBtn" class="btn">Check</button>
+      <button id="solveBtn" class="btn ghost">Solve</button>
+      <button id="clearBtn" class="btn ghost">Clear</button>
+    </div>
+
+    <div class="meta">
+      <div>Time: <span id="timer">00:00</span></div>
+      <div>Mistakes: <span id="mistakes">0</span></div>
+    </div>
+  </section>
+
+  <section id="board-wrap">
+    <table id="board" aria-label="Sudoku board"></table>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
